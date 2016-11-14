@@ -1,10 +1,18 @@
 .wrapper {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 900px;
     background: url("../imgs/background.jpg") center no-repeat;
     background-size: cover;
+}
+
+.wrapper-blocks {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .block {
@@ -29,7 +37,7 @@
 }
 
 @media only screen and (max-width: 800px) and (min-width: 613px) {
-    .wrapper {
+    .wrapper-blocks {
         flex-wrap: wrap;
     }
     .block {
@@ -50,7 +58,7 @@
 }
 
 @media only screen and (max-width: 612px){
-    .wrapper {
+    .wrapper-blocks {
         flex-wrap: wrap;
     }
 
@@ -62,5 +70,16 @@
 }
 
 .button {
+    width: 200px;
+    height: 75px;
+    margin: 50px;
+    font-size: 20px;
+}
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
